@@ -1,5 +1,5 @@
 {
-  "name": "chorelist",
+  "name": "ToDoForTheRestOf.Us",
   "version": "1.0.0",
   "description": "Create and Manage list of chores",
   "author": "e2thex",
@@ -10,11 +10,13 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "deploy": "node_modules/netlify-cli/bin/run deploy --prod -d 'dist'"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
     "cross-env": "^5.2.0",
+    "netlify-cli": "^2.6.1",
     "nuxt": "^2.0.0",
     "vuejs-datepicker": "^1.5.4"
   },

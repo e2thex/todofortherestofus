@@ -1,16 +1,12 @@
 <template>
-  <section class="container">
+  <section class="">
     <div>
       <!--logo/-->
-      <h1 class="title">
-        ChoreList
+      <h1 class="title bg-orange-dark text-center w-full p-2">
+        To Do For The Rest Of.Us
       </h1>
-      <h2 class="subtitle">
-        Create and Manage list of chores
-      </h2>
-      <div class="flex flex-wrap">
+      <div class="flex items-center flex-wrap m-auto container">
         <div class="w-full">
-          <h2 >List</h2>
           <c-l-list
             :items="items"
             :add="addItem"
@@ -151,14 +147,11 @@ export default {
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: 300;
-  font-size: 100px;
   color: #35495e;
-  letter-spacing: 1px;
 }
 
 .subtitle {
   font-weight: 300;
-  font-size: 42px;
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
